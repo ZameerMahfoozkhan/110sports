@@ -142,7 +142,7 @@ section{padding:100px 0}
 /* TESTIMONIALS */
 .testimonials-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:20px 0}
 .testimonials-track::-webkit-scrollbar{display:none}
-.testimonial-card{min-width:350px;background:var(--surface);border:1px solid var(--glass-border);border-radius:var(--radius);padding:32px;scroll-snap-align:start;flex-shrink:0}
+.testimonial-card{min-width:300px;max-width:340px;background:var(--surface);border:1px solid var(--glass-border);border-radius:var(--radius);padding:32px;scroll-snap-align:start;flex-shrink:0}
 .testimonial-card .stars{color:#FFB300;margin-bottom:12px;font-size:1.1rem}
 .testimonial-card blockquote{color:var(--text2);font-size:.95rem;margin-bottom:20px;font-style:italic}
 .testimonial-card .author{display:flex;align-items:center;gap:12px}
@@ -338,7 +338,7 @@ section{padding:60px 0}
 .hero-stats{display:none}
 .hero-buttons{flex-direction:row}
 .hero-buttons .btn{justify-content:center;flex:1;padding:10px 14px;font-size:.8rem}
-.hero-slider-dots{bottom:70px}
+.hero-slider-dots{bottom:16px}
 /* Section headers */
 .section-header{margin-bottom:36px}
 .section-header h2{font-size:1.5rem}
@@ -376,12 +376,22 @@ section{padding:60px 0}
 .footer-grid{grid-template-columns:1fr}
 .footer-bottom{flex-direction:column;text-align:center}
 /* Testimonials */
-.testimonials-track{gap:16px;padding:10px 0;scroll-snap-type:none}
-.testimonial-card{min-width:260px;padding:20px}
-.testimonial-card blockquote{font-size:.85rem;margin-bottom:14px}
+.testimonials-track{gap:14px;padding:10px 0;scroll-snap-type:none;-webkit-overflow-scrolling:touch}
+.testimonial-card{min-width:240px;max-width:280px;padding:20px}
+.testimonial-card .stars{font-size:.95rem;margin-bottom:8px}
+.testimonial-card blockquote{font-size:.85rem;margin-bottom:12px}
 .testimonial-card .author-avatar{width:36px;height:36px;font-size:.9rem}
 .testimonial-card .author-info h4{font-size:.8rem}
 .testimonial-card .author-info p{font-size:.7rem}
+/* Custom jersey / bulk offer mobile */
+.bulk-offer-grid{grid-template-columns:1fr !important;gap:24px !important;padding:28px !important}
+.values-grid{grid-template-columns:1fr 1fr}
+.gallery-grid{grid-template-columns:1fr 1fr}
+.process-steps{grid-template-columns:1fr 1fr}
+.info-card{padding:20px}
+.info-card .icon{font-size:1.5rem;margin-bottom:8px}
+.info-card h3{font-size:.9rem}
+.info-card p{font-size:.8rem}
 /* Other */
 .cta-banner{padding:40px 20px}
 .blog-grid{grid-template-columns:1fr}
