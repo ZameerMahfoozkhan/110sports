@@ -318,16 +318,25 @@ section{padding:100px 0}
 .detail-actions{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
 .detail-actions .btn{flex:1;min-width:180px;justify-content:center;padding:16px 24px;font-size:1rem;text-align:center}
 @media(max-width:768px){
-.product-detail{grid-template-columns:1fr;gap:32px;padding-top:20px}
+.product-detail{grid-template-columns:1fr;gap:24px;padding-top:10px}
 .product-gallery{position:static}
-.product-gallery .main-image{aspect-ratio:4/3}
-.product-detail-info h1{font-size:1.5rem;line-height:1.3;margin-bottom:6px}
+.product-gallery .main-image{aspect-ratio:4/3;max-height:320px}
+.product-gallery .main-image img{object-fit:contain;padding:6px}
+.main-gallery-btn{width:34px;height:34px;opacity:1}
+.product-gallery .thumb{width:60px;height:60px}
+.product-detail-info h1{font-size:1.4rem;line-height:1.3;margin-bottom:6px}
+.product-detail-info .tagline{font-size:.9rem;margin-bottom:16px}
+.product-detail-info .price-box{padding:14px}
+.product-detail-info .price-box .price{font-size:1.6rem}
 .specs-table td{display:block;width:100% !important;padding:4px 0}
 .specs-table tr{display:block;padding:10px 0}
 .specs-table td:first-child{font-size:.8rem;color:var(--text3);padding-bottom:2px}
 .specs-table td:last-child{font-size:.95rem;font-weight:600;color:var(--text);padding-top:0}
 .detail-actions{flex-direction:column}
 .detail-actions .btn{width:100%;min-width:100%}
+.page-hero{padding:100px 0 30px}
+.page-hero h1{font-size:1.6rem;margin-bottom:8px}
+.page-hero p{font-size:.9rem}
 }
 /* RESPONSIVE */
 @media(max-width:1024px){
@@ -359,9 +368,10 @@ body{padding-bottom:80px}
 .hero{min-height:auto;padding:100px 0 60px}
 .hero-stats{gap:16px}
 .hero-stat h3{font-size:1.5rem}
-.categories-grid{grid-template-columns:1fr}
+.categories-grid{grid-template-columns:repeat(2,1fr)}
 .products-grid{grid-template-columns:1fr}
 .stats-grid{grid-template-columns:1fr 1fr}
-.nav-logo{font-size:1.2rem}
-.nav-logo img{height:32px}
+.nav-logo{font-size:1.1rem}
+.nav-logo img{height:30px}
+.product-gallery .main-image{max-height:280px}
 }
